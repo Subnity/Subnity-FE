@@ -25,7 +25,7 @@ export default function Login() {
 export const Header = () => {
   return (
     <div className={style.header}>
-      <img src={subnityLogo} alt="SubnityLogo" className={style.subnityLogo} />
+      <img src={subnityLogo} alt="Logo" className={style.subnityLogo} />
       <h1 className={style.headerTitle}>Subnity</h1>
       <p className={style.headerContent}>구독 관리의 새로운 기준</p>
     </div>
