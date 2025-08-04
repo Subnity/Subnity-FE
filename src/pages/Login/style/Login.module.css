@@ -5,16 +5,10 @@
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    to bottom,
-    #eff6ff 0%,
-    #ffffff 60%,
-    #ffffff 100%
-  );
-  height: 86vh;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #fff 0%, #EFF6FE 100%);
 }
 
 .header {
@@ -22,12 +16,12 @@
 }
 
 .subnityLogo {
-  width: 80px;
-  height: 80px;
+  width: 52px;
+  height: 52px;
 }
 
 .headerTitle {
-  font-size: 33px;
+  font-size: 24px;
   font-weight: 900;
   margin: 14px 0 0 0;
 
@@ -35,15 +29,12 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0,
-    "SHRP" 0;
+  font-variation-settings: "slnt" 0, "CRSV" 0, "SHRP" 0;
 }
 
 .headerContent {
-  margin-top: 3px;
-  font-size: 19px;
+  margin-top: 6px;
+  font-size: 15px;
   color: rgb(61, 61, 61);
 }
 
@@ -51,8 +42,8 @@
   margin: 10px;
   padding: 10px;
   font-size: 18px;
-  width: 500px;
-  height: 58px;
+  width: 400px;
+  height: 48px;
   background-color: white;
   border: 1px solid #d1d5db;
   border-radius: 10px;
@@ -66,12 +57,13 @@
 }
 
 .loginButton img {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
 .loginButton p {
   padding-left: 20px;
+  font-size: 15px;
   padding-top: 1px;
   color: rgb(31, 31, 31);
 }
@@ -83,7 +75,7 @@
 
 .cardContainer {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 28px;
   padding: 30px 20px 20px 20px;
   background-color: white;
   border: 0;
@@ -92,27 +84,32 @@
 }
 
 .cardHeaderTitle {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .cardHeaderContent {
-  font-size: 17px;
+  font-size: 15px;
   padding: 16px 0 20px 0;
   color: rgb(106, 104, 104);
 }
 
 .cardContainer hr {
-  margin: 16px 0 28px 11px;
-  width: 495px;
+  margin: 16px 0 28px 10px;
+  width: 400px;
   text-align: center;
-  border: 1px solid rgb(232, 232, 232);
+  border: 0.3px solid rgb(232, 232, 232);
 }
 
 .cardContentTitle {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+
+  /* font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 36px;
+  color: mediumblue; */
 }
 
 .cardContentSubBox {
@@ -127,34 +124,42 @@
 .zap {
   background-color: rgb(53, 161, 255, 0.2);
   color: rgb(0, 85, 255);
-  padding: 8px;
+  padding: 7px;
   border-radius: 100px;
   margin-right: 16px;
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
 }
 
 .barChart {
   background-color: rgba(0, 255, 42, 0.2);
   color: rgb(26, 155, 0);
-  padding: 8px;
+  padding: 7px;
   border-radius: 100px;
   margin-right: 16px;
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
 }
 
 .cardContentSubBox .title {
-  font-size: 18px;
-  margin-bottom: 3px;
+  font-size: 15px;
+  margin-bottom: 4px;
   font-weight: 500;
 }
 
 .cardContentSubBox .desc {
-  font-size: 16px;
+  font-size: 13px;
   color: rgb(106, 104, 104);
 }
 
 .dataPrivacyContainer {
   margin-top: 30px;
-  background-color: #f9fafb;
-  border: 1px solid #e5e7eb;
+  /* background-color: #f9fafb; */
+  box-shadow: 0px 10px 10px rgb(228, 228, 228);
+  background-color: white;
+  /* border: 1px solid #e5e7eb; */
   padding: 20px 20px 30px 20px;
   border-radius: 12px;
 }
@@ -166,25 +171,25 @@
 }
 
 .dataPrivacyShield {
-  margin-left: 18px;
+  margin-left: 10px;
   color: #494c50;
 }
 
 .dataPrivacy p {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   margin-left: 16px;
 }
 
 .dataPrivacyDataTitle {
-  margin-left: 50px;
-  padding: 7px 0 4px 0;
-  font-size: 17px;
+  margin-left: 40px;
+  padding: 7px 0 4px 5px;
+  font-size: 14px;
   color: #3f434a;
 }
 
 .footer {
-  font-size: 17px;
+  font-size: 14px;
   text-align: center;
   margin-top: 30px;
   color: #6b7280;
